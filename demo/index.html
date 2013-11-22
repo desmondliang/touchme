@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!-- iPhone use only-->
+<!-- meta name = "viewport" content="width=320, user-scalable=0"/ -->
+
+<!-- iPad use only-->
+<!-- meta name = "viewport" content="width=768, user-scalable=0"/ -->
+
+<link rel="stylesheet" media="all" href="css/general.css"> 
+<link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css">
+<link rel="stylesheet" media="all and (orientation:landscape)" href="css/landscape.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.cycle/2.99/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchme.js"></script>
+<script type="text/javascript" src="js/application.js"></script>
+
+<title>jquery touchme Demo</title>
+</head>
+
+
+<body  onorientationchange="updateOrientation();">
+<div id="page">
+	<div id="header">
+		<span class="float_left" id="prev_demo"><img src="images/nav_arrow_left.png" class="navbtn"  /></span>
+		<span class="title float_left">TouchMe Demo</span>
+		<span class="float_left"  id="next_demo"><img src="images/nav_arrow_right.png" class="navbtn" /></span>		
+	</div>
+	<div id="demo_container">
+		<div id="demo_swiping" class="first">
+			<img src="images/dir_down.png" id="down" class="hidden" />
+			<img src="images/dir_up.png" id="up"  class="hidden" />
+			<img src="images/dir_left.png" id="left"  class="hidden" />
+			<img src="images/dir_right.png" id="right"  class="hidden" />
+			
+			<img src="images/dir_downleft.png" id="downleft"  class="hidden" />
+			<img src="images/dir_downright.png" id="downright"  class="hidden" />
+			<img src="images/dir_upleft.png" id="upleft"  class="hidden" />
+			<img src="images/dir_upright.png" id="upright"  class="hidden" />
+		</div>
+		
+		<div id="demo_rotation">
+			<img src="images/img_demo_rotation.jpg" height="428" width="350" class="rotatable" />
+			
+		</div>
+
+		<div id="demo_pickup">
+			<div class="grabable"><img src="images/img_demo_pickup.jpg" height="428" width="350"/></div>
+			
+		</div>
+	</div>
+	<div id="footer">
+		<span class="copyright"><a href="http://www.twitter.com/desmondliang" style="color:white;">@desmondliang</a> ( Made in <img src="images/canadian_flag.png"/> )</span>
+	</div>
+</div>
+</body>
+</html>
